@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Animal-Trash-Cleaner-Survival-Game", "Animal-Trash-Cleaner-Survival-Game.csproj", "{74C04104-3678-816C-0676-766F2843EE0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Animal-Trash-Cleaner-Survival-Game.Plugins", "Animal-Trash-Cleaner-Survival-Game.Plugins.csproj", "{82DAD2C2-D468-6B7A-02F1-1BE6E0ED612F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Animal-Trash-Cleaner-Survival-Game.Editor", "Animal-Trash-Cleaner-Survival-Game.Editor.csproj", "{EAD9E5C7-6D61-D0C7-993A-3D073F8130C3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{74C04104-3678-816C-0676-766F2843EE0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74C04104-3678-816C-0676-766F2843EE0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74C04104-3678-816C-0676-766F2843EE0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74C04104-3678-816C-0676-766F2843EE0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82DAD2C2-D468-6B7A-02F1-1BE6E0ED612F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82DAD2C2-D468-6B7A-02F1-1BE6E0ED612F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82DAD2C2-D468-6B7A-02F1-1BE6E0ED612F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82DAD2C2-D468-6B7A-02F1-1BE6E0ED612F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAD9E5C7-6D61-D0C7-993A-3D073F8130C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAD9E5C7-6D61-D0C7-993A-3D073F8130C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAD9E5C7-6D61-D0C7-993A-3D073F8130C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAD9E5C7-6D61-D0C7-993A-3D073F8130C3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

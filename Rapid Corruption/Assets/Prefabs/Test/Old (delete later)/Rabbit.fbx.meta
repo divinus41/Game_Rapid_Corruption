@@ -1,0 +1,159 @@
+fileFormatVersion: 2
+guid: 32e19ea0df6e1664490e9755a534284c
+timeCreated: 1521445855
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: _Controls_
+    100002: _FKs_
+    100004: Ctrl_Back
+    100006: Ctrl_Base
+    100008: ear_01_l
+    100010: ear_01_r
+    100012: ear_02_l
+    100014: ear_02_r
+    100016: ear_03_l
+    100018: ear_03_r
+    100020: forepaw_01_l
+    100022: forepaw_01_r
+    100024: forepaw_02_l
+    100026: forepaw_02_r
+    100028: forepaw_03_l
+    100030: forepaw_03_r
+    100032: forepaw_04_l
+    100034: forepaw_04_r
+    100036: GEO_Rabbit
+    100038: head
+    100040: hindheel_l
+    100042: hindheer_r
+    100044: hindleg_l
+    100046: hindlimb_l
+    100048: hindpaw_l
+    100050: hindpaw_r
+    100052: hindreg_r
+    100054: hindrimb_r
+    100056: joint1
+    100058: joint2
+    100060: mouth
+    100062: neck
+    100064: //RootNode
+    100066: root
+    100068: spine_01
+    100070: spine_02
+    100072: spine_03
+    400000: _Controls_
+    400002: _FKs_
+    400004: Ctrl_Back
+    400006: Ctrl_Base
+    400008: ear_01_l
+    400010: ear_01_r
+    400012: ear_02_l
+    400014: ear_02_r
+    400016: ear_03_l
+    400018: ear_03_r
+    400020: forepaw_01_l
+    400022: forepaw_01_r
+    400024: forepaw_02_l
+    400026: forepaw_02_r
+    400028: forepaw_03_l
+    400030: forepaw_03_r
+    400032: forepaw_04_l
+    400034: forepaw_04_r
+    400036: GEO_Rabbit
+    400038: head
+    400040: hindheel_l
+    400042: hindheer_r
+    400044: hindleg_l
+    400046: hindlimb_l
+    400048: hindpaw_l
+    400050: hindpaw_r
+    400052: hindreg_r
+    400054: hindrimb_r
+    400056: joint1
+    400058: joint2
+    400060: mouth
+    400062: neck
+    400064: //RootNode
+    400066: root
+    400068: spine_01
+    400070: spine_02
+    400072: spine_03
+    4300000: GEO_Rabbit
+    9500000: //RootNode
+    13700000: GEO_Rabbit
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

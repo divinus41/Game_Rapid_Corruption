@@ -1,0 +1,198 @@
+fileFormatVersion: 2
+guid: 728fc43ed21b4ff4d882d54684b61cd2
+timeCreated: 1521451790
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: _Controls_
+    100002: _FKs_
+    100004: _IKs_
+    100006: Ctrl_Back
+    100008: Ctrl_Base
+    100010: Ctrl_Ear01_l
+    100012: Ctrl_Ear01_r
+    100014: Ctrl_Ear02_l
+    100016: Ctrl_Ear02_r
+    100018: Ctrl_FrontPaw_l
+    100020: Ctrl_FrontPaw_r
+    100022: Ctrl_Head
+    100024: Ctrl_HindLimb_l
+    100026: Ctrl_HindLimb_r
+    100028: Ctrl_Spine
+    100030: ear_01_l
+    100032: ear_01_r
+    100034: ear_02_l
+    100036: ear_02_r
+    100038: ear_03_l
+    100040: ear_03_r
+    100042: forepaw_01_l
+    100044: forepaw_01_r
+    100046: forepaw_02_l
+    100048: forepaw_02_r
+    100050: forepaw_03_l
+    100052: forepaw_03_r
+    100054: forepaw_04_l
+    100056: forepaw_04_r
+    100058: GEO_Rabbit
+    100060: head
+    100062: hindheel_l
+    100064: hindheer_r
+    100066: hindleg_l
+    100068: hindlimb_l
+    100070: hindpaw_l
+    100072: hindpaw_r
+    100074: hindreg_r
+    100076: hindrimb_r
+    100078: ik_ear_l
+    100080: ik_ear_r
+    100082: ik_FrontPaw_l
+    100084: ik_FrontPaw_r
+    100086: IK_HindLimb_l
+    100088: IK_HindLimb_r
+    100090: ik_Spine
+    100092: joint1
+    100094: joint2
+    100096: mouth
+    100098: neck
+    100100: pelvis
+    100102: //RootNode
+    100104: root
+    100106: spine_01
+    100108: spine_02
+    100110: spine_03
+    400000: _Controls_
+    400002: _FKs_
+    400004: _IKs_
+    400006: Ctrl_Back
+    400008: Ctrl_Base
+    400010: Ctrl_Ear01_l
+    400012: Ctrl_Ear01_r
+    400014: Ctrl_Ear02_l
+    400016: Ctrl_Ear02_r
+    400018: Ctrl_FrontPaw_l
+    400020: Ctrl_FrontPaw_r
+    400022: Ctrl_Head
+    400024: Ctrl_HindLimb_l
+    400026: Ctrl_HindLimb_r
+    400028: Ctrl_Spine
+    400030: ear_01_l
+    400032: ear_01_r
+    400034: ear_02_l
+    400036: ear_02_r
+    400038: ear_03_l
+    400040: ear_03_r
+    400042: forepaw_01_l
+    400044: forepaw_01_r
+    400046: forepaw_02_l
+    400048: forepaw_02_r
+    400050: forepaw_03_l
+    400052: forepaw_03_r
+    400054: forepaw_04_l
+    400056: forepaw_04_r
+    400058: GEO_Rabbit
+    400060: head
+    400062: hindheel_l
+    400064: hindheer_r
+    400066: hindleg_l
+    400068: hindlimb_l
+    400070: hindpaw_l
+    400072: hindpaw_r
+    400074: hindreg_r
+    400076: hindrimb_r
+    400078: ik_ear_l
+    400080: ik_ear_r
+    400082: ik_FrontPaw_l
+    400084: ik_FrontPaw_r
+    400086: IK_HindLimb_l
+    400088: IK_HindLimb_r
+    400090: ik_Spine
+    400092: joint1
+    400094: joint2
+    400096: mouth
+    400098: neck
+    400100: pelvis
+    400102: //RootNode
+    400104: root
+    400106: spine_01
+    400108: spine_02
+    400110: spine_03
+    2300000: GEO_Rabbit
+    3300000: GEO_Rabbit
+    4300000: GEO_Rabbit
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
