@@ -66,7 +66,7 @@ public class Trash : MonoBehaviour
             style.fontSize = 20;
 
             // Heading.
-            GUI.Label(new Rect(playerPosition.x - 130, Screen.height - playerPosition.y + 50, 100, 50), "Press 'E' to get garbage", style);
+            GUI.Label(new Rect(playerPosition.x - 130, Screen.height - playerPosition.y + 100, 100, 50), "Press 'E' to get garbage", style);
         }
     }
 }

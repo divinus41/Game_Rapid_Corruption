@@ -9,10 +9,10 @@ public class PuddleEffects : MonoBehaviour {
     private string objectName;
     private GameObject collidingBaby;
     private BabyRabbitControl babyRabbitControlScript;
-    private Transform child;
 
     private int damageIntervall;
     private int intervallCounter;
+    private bool submitClick;
     #endregion
 
 
@@ -21,6 +21,16 @@ public class PuddleEffects : MonoBehaviour {
         intervallCounter = damageIntervall;
 
         objectName = gameObject.name;
+        submitClick = false;
+	}
+
+    private void Update()
+    {
+        /*if (Input.GetButtonDown("Submit"))
+        {
+            submitClick = submitClick == true ? false : true;
+        }*/
+
         //puddle-area saves its position wich equals the puddle-position
         if (objectName != "Puddle")
         {
@@ -28,7 +38,11 @@ public class PuddleEffects : MonoBehaviour {
             //child = gameObject.transform.GetChild(0);
             //puddlePosition = child.position;
         }
-	}
+        /*else if (!submitClick)
+        {
+            trashPosition = Vector3.zero;
+        }*/
+    }
 
     #region Trigger
     private void OnTriggerEnter (Collider other)
@@ -92,4 +106,10 @@ public class PuddleEffects : MonoBehaviour {
         }
     }
     #endregion
+
+    public Vector3 TrashPosition
+    {
+        get { return trashPosition; }
+        set { trashPosition = value; }
+    }
 }

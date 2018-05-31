@@ -10,7 +10,8 @@ public class MouseRotation : MonoBehaviour
 
     void Start()
     {
-        Cursor.visible = false;
+        Cursor.visible = true;
+        Cursor.lockState= CursorLockMode.Locked;
 
         offset = new Vector3(player.position.x, player.position.y + 200f, player.position.z);
     }

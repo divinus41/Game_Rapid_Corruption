@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rapid Corruption", "Rapid Corruption.csproj", "{C0C5D657-C860-E757-AFF8-781F13068D51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rapid Corruption.Plugins", "Rapid Corruption.Plugins.csproj", "{39BCC2C3-9EAF-BF64-0C20-C24B3184B904}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rapid Corruption.Editor", "Rapid Corruption.Editor.csproj", "{D063757D-AE13-903F-FBD5-F06EC4F4FD7C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C0C5D657-C860-E757-AFF8-781F13068D51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0C5D657-C860-E757-AFF8-781F13068D51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0C5D657-C860-E757-AFF8-781F13068D51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0C5D657-C860-E757-AFF8-781F13068D51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39BCC2C3-9EAF-BF64-0C20-C24B3184B904}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39BCC2C3-9EAF-BF64-0C20-C24B3184B904}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39BCC2C3-9EAF-BF64-0C20-C24B3184B904}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39BCC2C3-9EAF-BF64-0C20-C24B3184B904}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D063757D-AE13-903F-FBD5-F06EC4F4FD7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D063757D-AE13-903F-FBD5-F06EC4F4FD7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D063757D-AE13-903F-FBD5-F06EC4F4FD7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D063757D-AE13-903F-FBD5-F06EC4F4FD7C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

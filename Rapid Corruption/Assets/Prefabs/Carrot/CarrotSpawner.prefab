@@ -193,8 +193,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 1783462950652220}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ac9ed4c80bd989448da1912dbfb3b49, type: 3}
+  m_Script: {fileID: 11500000, guid: 262c3c7e60ccf454cbe1e390df28ae8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  carrotPrefab: {fileID: 1815664196013484, guid: a9dca26a784cc0c45bc9f76a4faf2bf7,
+  carrotPrefab: {fileID: 1737527703605376, guid: b1251461421247348a352527f624a077,
     type: 2}

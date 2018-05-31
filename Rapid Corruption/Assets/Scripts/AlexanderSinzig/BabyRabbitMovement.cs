@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BabyRabbitMovement : MonoBehaviour
 {
@@ -18,6 +20,11 @@ public class BabyRabbitMovement : MonoBehaviour
     private float babySpeed;
     #endregion
 
+    private void Awake()
+    {
+        playerMovementScript = FindObjectOfType<PlayerMovement>();
+    }
+
     private void Start()
     {
 
@@ -27,8 +34,8 @@ public class BabyRabbitMovement : MonoBehaviour
         cmotor = GetComponent<CharacterMotorC>();
 
         //set babyspeed value
-        playerMovementScript = FindObjectOfType<PlayerMovement>();
-        babySpeed = playerMovementScript.Speed;
+        if (playerMovementScript != null)
+            babySpeed = playerMovementScript.Speed;
     }
 
     void Update()
@@ -92,7 +99,8 @@ public class BabyRabbitMovement : MonoBehaviour
              else
              {
                 //disable sprint for player
-                playerMovementScript.sprintEnable = false;
+                if (playerMovementScript != null)
+                    playerMovementScript.sprintEnable = false;
              }
              #endregion
         }

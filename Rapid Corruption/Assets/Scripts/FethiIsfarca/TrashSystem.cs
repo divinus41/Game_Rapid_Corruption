@@ -4,8 +4,8 @@ public class TrashSystem : MonoBehaviour
 {
     // Value types
     public bool throwTrash;
-    public float minThrowFar;
-    public float maxThrowFar;
+    public float minThrowDistance;
+    public float maxThrowDistance;
 
     // Reference types
     private Rigidbody trashSystemRigidbody;
@@ -29,7 +29,7 @@ public class TrashSystem : MonoBehaviour
         // Throw trash.
         if (throwTrash)
         {
-            trashSystemRigidbody.AddForce(Vector3.right * Random.Range(minThrowFar, maxThrowFar));
+            trashSystemRigidbody.AddForce(Vector3.right * Random.Range(minThrowDistance, maxThrowDistance));
             trashSystemRigidbody.useGravity = true;
 
             Debug.Log("Trash throwed!");

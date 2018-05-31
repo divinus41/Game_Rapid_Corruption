@@ -1,41 +1,60 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
     // Value types
+    private bool firstEnableHud;
     private int backpack;
     private int paperTrash, plasticTrash;
     private static int score;
-    private int frames;
 
     // Refernce types
-    private SpriteRenderer spriteRenderer;
-    private BabyRabbitControl babyRabbitControlScript;
-    public Canvas canvasComponent;
-    public Slider sliderComponent;
+    public BabyRabbitControl[] babyRabbitControlScript;
+    public Canvas playerCanvas, cameraCanvas;
+    public Slider[] babyRabbitSlider;
+    public Slider backpackSlider;
     public Text numberOfPaperTextComponent;
     public Text numberOfPlasticTextComponent;
-    public Texture2D[] texture2d;
+    public Text scoreNumberText;
+    public Text timerNumberText;
 
-    private void Awake()
+    // Use this for initialization
+    void Start()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        // Enable hud and start the coroutine for the disable hud.
+        firstEnableHud = true;
+        StartCoroutine(EnableHud());
 
-        babyRabbitControlScript = FindObjectOfType<BabyRabbitControl>();
-
-        frames = 0;
+        // Start the ticking timer coroutine.
+        StartCoroutine(TickTimer());
     }
 
     // Update is called once per frame
-    private void Update()
+    void Update()
     {
         // By press the button 'F', than see the HUD.
-        if (Input.GetAxis("HUD") > 0)
-            canvasComponent.enabled = true;
-        else
-            canvasComponent.enabled = false;
+        if (Input.GetAxis("HUD") > 0 && !firstEnableHud)
+        {
+            playerCanvas.enabled = true;
+            cameraCanvas.enabled = true;
+        }
+        else if (Input.GetAxis("HUD") <= 0 && !firstEnableHud)
+        {
+            playerCanvas.enabled = false;
+            cameraCanvas.enabled = false;
+        }
+
+        // Set health value of baby rabbits in slider.
+        babyRabbitSlider[0].value = babyRabbitControlScript[0].Health;
+        babyRabbitSlider[1].value = babyRabbitControlScript[1].Health;
+        babyRabbitSlider[2].value = babyRabbitControlScript[2].Health;
+
+        // When all baby rabbits dead, then load lose screen.
+        if (babyRabbitSlider[0].value == 0 && babyRabbitSlider[1].value == 0 && babyRabbitSlider[2].value == 0)
+            StartCoroutine(LoadLoseScreen());
     }
 
     /// <summary>
@@ -77,66 +96,16 @@ public class Player : MonoBehaviour
         {
             // Is a setable trash?
             if (other.CompareTag("PaperTent"))
-            {
                 KillTrashes(ref paperTrash, ref backpack);
-                score += 50;
-            }
             else if (other.CompareTag("PlasticTent"))
-            {
                 KillTrashes(ref plasticTrash, ref backpack);
-                score += 50;
-            }
         }
 
-        // Set Values for UI.
-        sliderComponent.value = backpack;
+        // Set Values for hud.
+        backpackSlider.value = backpack;
         numberOfPaperTextComponent.text = paperTrash.ToString();
         numberOfPlasticTextComponent.text = plasticTrash.ToString();
-    }
-
-    private void OnGUI()
-    {
-        // Declare variables
-        Vector3 playerPosition;
-        GUIStyle style = new GUIStyle();
-        Font font;
-        Texture2D rabbitTexture2d = null;
-
-        // Set the position from player.
-        playerPosition = Camera.main.WorldToScreenPoint(transform.position);
-
-        // Set font for heading and button.
-        font = (Font)Resources.Load("Fonts/Screen", typeof(Font));
-
-        style.font = font;
-        // Set font size for heading.
-        style.fontSize = 50;
-
-        // By press the button 'F', than see the GUI-HUD.
-        if (Input.GetAxis("HUD") > 0)
-        {
-            if (babyRabbitControlScript.Health > 0)
-                rabbitTexture2d = texture2d[0];
-            else if (babyRabbitControlScript.Health <= 0)
-            {
-                rabbitTexture2d = texture2d[1];
-                score -= 100;
-
-                frames++;
-
-                if (frames > 500)
-                    SceneManager.LoadScene(4);
-            }
-
-            GUI.DrawTexture(new Rect(playerPosition.x / 16, playerPosition.y / 24, 50, 50), rabbitTexture2d);
-            GUI.HorizontalSlider(new Rect(playerPosition.x / 4, playerPosition.y / 8, 150, 50), babyRabbitControlScript.Health, 0f, 10f);
-            GUI.DrawTexture(new Rect(playerPosition.x / 16, playerPosition.y / 4, 50, 50), rabbitTexture2d);
-            GUI.HorizontalSlider(new Rect(playerPosition.x / 4, playerPosition.y / 3, 150, 50), babyRabbitControlScript.Health, 0f, 10f);
-            GUI.DrawTexture(new Rect(playerPosition.x / 16, playerPosition.y / 2, 50, 50), rabbitTexture2d);
-            GUI.HorizontalSlider(new Rect(playerPosition.x / 4, playerPosition.y / 1.7f, 150, 50), babyRabbitControlScript.Health, 0f, 10f);
-
-            GUI.Label(new Rect(playerPosition.x * 1.3f, playerPosition.y / 24, 200, 100), "Score: " + score, style);
-        }
+        scoreNumberText.text = score.ToString();
     }
 
     /// <summary>
@@ -153,6 +122,73 @@ public class Player : MonoBehaviour
                 backpack--;
 
             trash = 0;
+            score += 50;
         }
+    }
+
+    /// <summary>
+    /// Disable hud from started game.
+    /// </summary>
+    /// <returns>The seconds for wait.</returns>
+    private IEnumerator EnableHud()
+    {
+        yield return new WaitForSeconds(5);
+
+        firstEnableHud = false;
+
+        StopCoroutine(EnableHud());
+    }
+
+    /// <summary>
+    /// Decrement/Ticking timer.
+    /// </summary>
+    /// <returns>The seconds for wait.</returns>
+    private IEnumerator TickTimer()
+    {
+        // Declare variables.
+        int minutes = 7;
+        int seconds = 1;
+        string formatSeconds;
+
+        // Continous loop for decrement seconds.
+        for (; ;)
+        {
+            // Decrement seconds.
+            yield return new WaitForSeconds(1);
+            seconds--;
+
+            // Set 10th place by seconds.
+            formatSeconds = seconds <= 9 ? "0" + seconds.ToString() : seconds.ToString();
+
+            // Output timer.
+            timerNumberText.text = string.Format("0{0} : {1}", minutes, formatSeconds);
+
+            // Countdown the minutes and reset seconds, when seconds equal zero.
+            if (seconds <= 0)
+            {
+                minutes--;
+                seconds = 60;
+            }
+
+            // When minutes equal zero, then start the coroutine for loading lose screen.
+            if (minutes <= 0)
+            {
+                StartCoroutine(LoadLoseScreen());
+                StopCoroutine(TickTimer());
+            }
+        }
+    }
+
+    /// <summary>
+    /// When not baby rabbits in the level, then load the lose screen.
+    /// </summary>
+    /// <returns>The seconds for wait.</returns>
+    private IEnumerator LoadLoseScreen()
+    {
+        yield return new WaitForSeconds(5);
+
+        SceneManager.LoadScene(2);
+
+        StopAllCoroutines();
     }
 }

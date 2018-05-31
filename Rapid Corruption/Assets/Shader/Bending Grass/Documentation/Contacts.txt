@@ -1,0 +1,11 @@
+Read the documentation and FAQs before asking for help, usually it contains everything you need.
+
+If for some reason you can’t make it work properly, you can contact me:
+
+Discord : https://discord.gg/WhHSPfy
+Email : rompipapera@gmail.com
+	
+If you want to suggest something you’d like to see in the package, you can suggest it here : https://discord.gg/QrgT4NG
+
+BendinGrass is a relatively new package, so there will be some bugs.
+If you find a bug, please report it by email or discord channel : https://discord.gg/mRcuHcY

@@ -3,6 +3,12 @@ using UnityEngine.SceneManagement;
 
 public class LoseScreen : MonoBehaviour
 {
+    private void Awake()
+    {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+    }
+
     /// <summary>
     /// Output the lose screen.
     /// </summary>
@@ -27,10 +33,8 @@ public class LoseScreen : MonoBehaviour
 
         // Buttons.
         if (GUI.Button(new Rect((Screen.width / 2 - 420), (Screen.height / 2 - 120), 200, 20), "Play", style))
-            SceneManager.LoadScene(3);
-        else if (GUI.Button(new Rect((Screen.width / 2 - 420), (Screen.height / 2 - 90), 200, 20), "Options", style))
-            SceneManager.LoadScene(2);
-        else if (GUI.Button(new Rect((Screen.width / 2 - 420), (Screen.height / 2 - 60), 200, 20), "Quit", style))
+            SceneManager.LoadScene(1);
+        else if (GUI.Button(new Rect((Screen.width / 2 - 420), (Screen.height / 2 - 90), 200, 20), "Quit", style))
             Application.Quit();
     }
 }

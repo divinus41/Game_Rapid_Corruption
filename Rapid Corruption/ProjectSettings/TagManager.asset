@@ -15,6 +15,11 @@ TagManager:
   - PlasticTent
   - PaperTent
   - ElectricTent
+  - Booster
+  - One
+  - Two
+  - Three
+  - Four
   layers:
   - Default
   - TransparentFX

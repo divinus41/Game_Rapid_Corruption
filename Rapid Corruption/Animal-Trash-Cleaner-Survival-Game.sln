@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
+# Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Animal-Trash-Cleaner-Survival-Game", "Animal-Trash-Cleaner-Survival-Game.csproj", "{74C04104-3678-816C-0676-766F2843EE0A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Animal-Trash-Cleaner-Survival-Game.Plugins", "Animal-Trash-Cleaner-Survival-Game.Plugins.csproj", "{82DAD2C2-D468-6B7A-02F1-1BE6E0ED612F}"
